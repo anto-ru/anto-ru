@@ -4,7 +4,7 @@ Google Specialist certificated as<br>
 
 I like to <i>code and talk</i> about the tech world!<br>
 I’m always happy to collaborate on <i>something interesting</i><br>
-about <b>Software development</b> and/or <b>Data Analytics</b>;
+about <b>Web/App/Software development</b> and/or <b>Data Analytics</b>;
 
 Contact: <br>
 antonio.web.lab@gmail.com <br>
