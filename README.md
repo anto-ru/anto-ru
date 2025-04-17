@@ -12,6 +12,11 @@ https://www.linkedin.com/in/antonio-r-83937a25b/ <br>
 https://anto-ru.github.io/anto-ru/ <br>
 
 # Last project in development:
+Laracast-PHP on :
+<br>
+https://github.com/anto-ru/laracast-PHP
+<br/>
+
 Try hack me on :
 <br>
 https://github.com/anto-ru/Flask_User-Authentication
