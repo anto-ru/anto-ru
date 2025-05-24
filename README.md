@@ -1,9 +1,11 @@
-## 👋 Hi, I’m Antonio .
+## 👋 Hi, I’m Antonio, welcome !
 Google Specialist certificated as<br>
-<b>Data Analyst</b> and <b>IT Assistantance</b>
+<b>Data Analyst</b> and <b>IT Assistantance</b>.
+
+I help people turn their ideas 💡 into businesses 💼 by working smarter and using digital solutions consciously.
 
 I’m always happy to collaborate on <i>something interesting</i> about<br>
-<b>Web/Mobile APPs development</b> and/or <b>Data Analytics</b>
+<b>Web/Mobile APPs development</b> and/or <b>Data Analytics</b>.
 
 `Contact:` <br>
 antonio.web.lab@gmail.com <br>
