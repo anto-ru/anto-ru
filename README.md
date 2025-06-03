@@ -1,15 +1,11 @@
 ## 👋 Hi, I’m Antonio, welcome !
 
-## 🌐 Language Versions / Versioni / Versiones / Versionen / Versies / Versions
-
 - [🇬🇧 English](#english-version)
 - [🇮🇹 Italiano](#versione-italiana)
 - [🇪🇸 Español](#versión-en-español)
 - [🇩🇪 Deutsch](#deutsche-version)
 - [🇳🇱 Nederlands](#nederlandse-versie)
 - [🇫🇷 Français](#version-française)
-
-
 ---
 
 ## English version
