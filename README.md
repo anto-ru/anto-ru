@@ -1,32 +1,29 @@
 ## 👋 Hi, I’m Antonio, welcome !
 
-- [🇬🇧 English](#english-version)
-- [🇮🇹 Italiano](#versione-italiana)
-- [🇪🇸 Español](#versión-en-español)
-- [🇩🇪 Deutsch](#deutsche-version)
-- [🇳🇱 Nederlands](#nederlandse-versie)
-- [🇫🇷 Français](#version-française)
+[🇬🇧 English](#english-version)  [🇮🇹 Italiano](#versione-italiana) [🇪🇸 Español](#versión-en-español)  [🇩🇪 Deutsch](#deutsche-version)
+[🇳🇱 Nederlands](#nederlandse-versie)  [🇫🇷 Français](#version-française)
 ---
 
 ## English version
 
-Google Specialist certificated as  
+**Google Specialist** certificated as 
 **Data Analyst** and **IT Assistance**.
 
 I help people turn their ideas 💡 into businesses 💼 by working smarter and using digital solutions consciously.
 
 I’m always happy to collaborate on *something interesting* about  
-**Web/Mobile APPs development** and/or **Data Analytics**.
+**Web and Mobile APPs development** and/or **Data Analytics**.
 
 `Contact:`  
 antonio.web.lab@gmail.com  
 https://www.linkedin.com/in/antonio-r-83937a25b/  
 https://anto-ru.github.io/anto-ru/
 
-# Last project in development:
+# New projects in development:
 - [🔐 Validation Rules Gift Card Form](#validation-rules-gift-card-form)
-- [Laracast-PHP](#laracast-php)
-- [Try hack me](#try-hack-me)
+- [Laracast v.12 & PHP](#laracast-php)
+- 
+<!-- - [Try hack me on Flask](#try-hack-me) -->
 
 
 ## Validation Rules Gift Card Form
@@ -66,7 +63,7 @@ The gift card purchase form implements **client-side validation** using vanilla 
 💡 **Note**: All functionalities are implemented using pure JavaScript, with no external dependencies, ensuring maximum performance and cross-browser compatibility.
 
 
-## Laracast PHP
+## Laracast v.12 & PHP
 
 ***https://github.com/anto-ru/laracast-PHP***
 
