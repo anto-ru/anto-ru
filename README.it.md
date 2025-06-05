@@ -11,7 +11,7 @@ Sono sempre felice di collaborare su *qualcosa di interessante* riguardo lo svil
 **app web e mobile** e/o **analisi dei dati**.
 
 `Contatti:`  
-e-mail: antonio.web.lab@gmail.com<br>
+E-Mail: antonio.web.lab@gmail.com<br>
 LinkedIn: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
 Sito web: https://anto-ru.github.io/anto-ru/<br>
 

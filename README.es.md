@@ -11,7 +11,7 @@ Siempre estoy dispuesto a colaborar en *proyectos interesantes* sobre
 **desarrollo de aplicaciones web y móviles** y/o **analítica de datos**.
 
 `Contacto:`  
-e-mail: antonio.web.lab@gmail.com<br>
+E-Mail: antonio.web.lab@gmail.com<br>
 LinkedIn: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
 Sitio web: https://anto-ru.github.io/anto-ru/<br>
 
