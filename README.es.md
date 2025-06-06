@@ -12,12 +12,13 @@ Siempre estoy dispuesto a colaborar en *proyectos interesantes* sobre
 
 `Contacto:`  
 E-Mail: antonio.web.lab@gmail.com<br>
-LinkedIn: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
+Linkedin: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
 Sitio web: https://anto-ru.github.io/anto-ru/<br>
 
 <h2>Nuevos proyectos en desarrollo:</h2>
 
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 

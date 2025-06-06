@@ -14,12 +14,13 @@ I’m always happy to collaborate on *something interesting* about
 
 `Contact:`  
 E-Mail: antonio.web.lab@gmail.com<br>
-LinkedIn: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
+Linkedin: https://www.linkedin.com/in/antonio-r-83937a25b/<br>
 Website: https://anto-ru.github.io/anto-ru/<br>
 
 <h2>New projects in development:</h2>
 
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 
