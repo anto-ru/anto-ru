@@ -1,28 +1,32 @@
 import re
 from pathlib import Path
 
-# Percorso base del progetto
 root = Path(__file__).parent
+# readme_files = list(root.glob("README.*.md"))
+readme_files = list(root.glob("README.*"))
+# readme_files = [f for f in readme_files if f.name != "README.md"]
 
-# File README da processare (escludiamo README.md "principale")
-readme_files = list(root.glob("README.*.md"))
-readme_files = [f for f in readme_files if f.name != "README.md"]
+# Regex per trovare i blocchi INCLUDE completi
+pattern = re.compile(
+    r"(<!--\s*INCLUDE:\s*(.*?)\s*-->\s*\n?)" +         # gruppo 1: commento INCLUDE
+    r"(<!-- START INCLUDE -->\n.*?\n<!-- END INCLUDE -->)",  # gruppo 2: blocco da sostituire
+    re.DOTALL
+)
 
-# Pattern per cercare <!-- INCLUDE: path/to/file.md -->
-include_pattern = re.compile(r"<!--\s*INCLUDE:\s*(.*?)\s*-->")
+for path in readme_files:
+    content = path.read_text(encoding="utf-8")
 
-for readme_path in readme_files:
-    content = readme_path.read_text(encoding="utf-8")
+    def replacer(match):
+        include_comment = match.group(1)
+        file_path = match.group(2).strip()
+        include_file = (root / file_path).resolve()
 
-    def replace_include(match):
-        include_path = root / match.group(1).strip()
-        if include_path.exists():
-            return include_path.read_text(encoding="utf-8").strip()
-        else:
-            return f"<!-- FILE NOT FOUND: {include_path} -->"
+        if not include_file.exists():
+            return include_comment + "\n<!-- START INCLUDE -->\n<!-- FILE NOT FOUND -->\n<!-- END INCLUDE -->"
 
-    new_content = include_pattern.sub(replace_include, content)
+        included_text = include_file.read_text(encoding="utf-8").strip()
+        return f"{include_comment}\n<!-- START INCLUDE -->\n{included_text}\n<!-- END INCLUDE -->"
 
-    # Sovrascrive il file con il contenuto aggiornato
-    readme_path.write_text(new_content, encoding="utf-8")
-    print(f"Aggiornato: {readme_path.name}")
+    new_content = pattern.sub(replacer, content)
+    path.write_text(new_content, encoding="utf-8")
+    print(f"Aggiornato: {path.name}")
