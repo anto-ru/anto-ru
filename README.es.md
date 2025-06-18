@@ -1,5 +1,6 @@
 [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇪🇸 Español](README.es.md) - [🇩🇪 Deutsch](README.de.md)
----
+<br><br>
+
 **🇪🇸 Versión en español**
 
 👋 Hola, me llamo Antonio, ¡bienvenido!<br>
@@ -23,15 +24,17 @@ Sitio web: https://anto-ru.github.io/anto-ru/<br>
 
 
 
+
+
 <!-- START INCLUDE -->
-- [🔒 Validation rules for Gift Card Form](#-validation-rules-for-gift-card-form)
-- [Laracast v.12 \& PHP](#laracast-v12--php)
-- [Windows CLI \& Services Utilities](#windows-cli--services-utilities)
-- [Try hack me on Flask](#try-hack-me-on-flask)
+- [Validation rules for `Gift Card Form`](#validation-rules-for-gift-card-form)
+- [`Laracast` v.12 \& `PHP`](#laracast-v12--php)
+- [Microsoft `Windows` CLI \& Services Utilities](#microsoft-windows-cli--services-utilities)
+- [Try hack me on `Flask`](#try-hack-me-on-flask)
 
 <br>
 
-## 🔒 Validation rules for Gift Card Form
+## Validation rules for `Gift Card Form`
 The gift card purchase form implements **client-side validation** using vanilla JavaScript to ensure data accuracy and improve user experience.
 
 📞 Field `#phone_number` – User phone number
@@ -66,13 +69,13 @@ The gift card purchase form implements **client-side validation** using vanilla 
 
 <br>
 
-## Laracast v.12 & PHP
+## `Laracast` v.12 & `PHP`
 
 Repository: ***https://github.com/anto-ru/laracast-PHP***
 
 <br>
 
-## Windows CLI & Services Utilities
+## Microsoft `Windows` CLI & Services Utilities
 
 Repository: **https://github.com/anto-ru/windows-batch-scripts-public**
 
@@ -80,7 +83,7 @@ Repository: **https://github.com/anto-ru/windows-batch-scripts-public**
 
 <br>
 
-## Try hack me on Flask
+## Try hack me on `Flask`
 
 Repository: ***https://github.com/anto-ru/Flask_User-Authentication***
 
