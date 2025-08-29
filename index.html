@@ -65,7 +65,7 @@
             color: #e5e7eb;
         }
 
-.dark-theme .text-subtitle {
+        .dark-theme .text-subtitle {
             color: #9ca3af;
         }
         
@@ -102,33 +102,37 @@
                     <div id="lang-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center">
                         <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
                         <div class="card-bg rounded-lg shadow-xl p-6 relative z-10 w-full max-w-sm mx-auto">
+                            <!-- Close button with a circular background for contrast -->
+                            <button id="lang-modal-close" class="absolute top-3 right-3 p-2 rounded-full text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-200" aria-label="Chiudi menu lingua" title="Chiudi menu lingua">
+                                <i class="fas fa-xmark text-xl" aria-hidden="true"></i>
+                            </button>
                             <h3 class="text-lg font-bold text-main mb-4" id="select-lang-title">Seleziona Lingua</h3>
                             <div class="grid grid-cols-2 gap-4">
-                                <button data-lang="en" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="en" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="English">
                                     <span class="text-2xl">🇬🇧</span>
                                     <span>English</span>
                                 </button>
-                                <button data-lang="it" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="it" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Italiano">
                                     <span class="text-2xl">🇮🇹</span>
                                     <span>Italiano</span>
                                 </button>
-                                <button data-lang="es" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="es" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Español">
                                     <span class="text-2xl">🇪🇸</span>
                                     <span>Español</span>
                                 </button>
-                                <button data-lang="de" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="de" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Deutsch">
                                     <span class="text-2xl">🇩🇪</span>
                                     <span>Deutsch</span>
                                 </button>
-                                <button data-lang="nl" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="nl" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Nederlands">
                                     <span class="text-2xl">🇳🇱</span>
                                     <span>Nederlands</span>
                                 </button>
-                                <button data-lang="no" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="no" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Norsk">
                                     <span class="text-2xl">🇳🇴</span>
                                     <span>Norsk</span>
                                 </button>
-                                <button data-lang="zh" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                <button data-lang="zh" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="中文">
                                     <span class="text-2xl">🇨🇳</span>
                                     <span>中文</span>
                                 </button>
@@ -237,7 +241,10 @@
      <!-- Footer -->
     <footer class="header-bg shadow-sm py-6 text-center text-subtitle text-sm transition-colors duration-500">
         <p>
-            &copy; <span id="current-year"></span> Antonio Russo. <span id="footer-rights">All rights reserved.</span>
+            
+			<strong>&copy;&nbsp;<span id="current-year">&nbsp;</span>&nbsp;Antonio Russo</strong>
+		   <br>
+		   <span id="footer-rights"></span>
         </p>
 		<br>
 		<p id="footer-piva">
@@ -253,6 +260,7 @@
             const body = document.body;
             const langButton = document.getElementById('lang-button');
             const langModal = document.getElementById('lang-modal');
+            const langModalClose = document.getElementById('lang-modal-close');
             const currentLangFlag = document.getElementById('current-lang-flag');
             const currentLangCode = document.getElementById('current-lang-code');
             const langOptions = document.querySelectorAll('.lang-option');
@@ -287,12 +295,12 @@
                     'contact-phone-ch': '🇨🇭 Switzerland',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'Email',
-                    'footer-rights': 'All rights reserved.',
+                    'footer-rights': 'All rights reserved',
                     'footer-piva': '<strong>IT Consultant</strong><br>P.IVA 14176680966'
                 },
                 'it': {
                     'select-lang-title': 'Seleziona Lingua',
-                    'hero-title': 'Il tuo <span class="text-blue-500">Consulente IT</span> per il Mondo Digitale',
+                    'hero-title': 'Il tuo <span class="text-blue-500">Consulente Informatico</span> per il Mondo Digitale',
                     'hero-subtitle': 'Aiuto le aziende a navigare nel panorama digitale, trasformando sfide complesse in soluzioni innovative ed efficaci.',
                     'card1-title': 'Sviluppo Web & Mobile',
                     'card1-text': 'Creazione di siti web reattivi, piattaforme e-commerce e applicazioni mobile-friendly che stimolano l\'engagement e la crescita.',
@@ -307,12 +315,12 @@
                     'contact-phone-ch': '🇨🇭 Svizzera',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'Email',
-                    'footer-rights': 'Tutti i diritti riservati.',
-                    'footer-piva': '<strong>Consulente IT</strong><br>P.IVA 14176680966'
+                    'footer-rights': 'Tutti i diritti riservati',
+                    'footer-piva': '<strong>Consulente Informatico</strong><br>P.IVA 14176680966'
                 },
                 'es': {
                     'select-lang-title': 'Seleccionar Idioma',
-                    'hero-title': 'Tu <span class="text-blue-500">Consultor de TI</span> para el Mundo Digital',
+                    'hero-title': 'Tu <span class="text-blue-500">Consultor Informático</span> para el Mundo Digital',
                     'hero-subtitle': 'Ayudo a las empresas a navegar por el panorama digital, transformando desafíos complejos en soluciones innovadoras y efectivas.',
                     'card1-title': 'Desarrollo Web y Móvil',
                     'card1-text': 'Creación de sitios web responsivos, plataformas de comercio electrónico y aplicaciones móviles que impulsan el compromiso y el crecimiento.',
@@ -327,8 +335,8 @@
                     'contact-phone-ch': '🇨🇭 Suiza',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'Correo electrónico',
-                    'footer-rights': 'Todos los derechos reservados.',
-                    'footer-piva': '<strong>Consultor de TI</strong><br>P.IVA 14176680966'
+                    'footer-rights': 'Todos los derechos reservados',
+                    'footer-piva': '<strong>Consultor Informático</strong><br>P.IVA 14176680966'
                 },
                 'de': {
                     'select-lang-title': 'Sprache auswählen',
@@ -347,12 +355,12 @@
                     'contact-phone-ch': '🇨🇭 Schweiz',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'E-Mail',
-                    'footer-rights': 'Alle Rechte vorbehalten.',
+                    'footer-rights': 'Alle Rechte vorbehalten',
                     'footer-piva': '<strong>IT-Berater</strong><br>P.IVA 14176680966'
                 },
                 'nl': {
                     'select-lang-title': 'Selecteer Taal',
-                    'hero-title': 'Uw <span class="text-blue-500">IT-adviseur</span> voor de digitale wereld',
+                    'hero-title': 'Uw <span class="text-blue-500">IT-consultant</span> voor de digitale wereld',
                     'hero-subtitle': 'Ik help bedrijven door het digitale landschap te navigeren, complexe uitdagingen om te zetten in innovatieve en effectieve oplossingen.',
                     'card1-title': 'Web- en mobiele ontwikkeling',
                     'card1-text': 'Het creëren van responsieve websites, e-commerce platforms en mobielvriendelijke applicaties die betrokkenheid en groei stimuleren.',
@@ -367,8 +375,8 @@
                     'contact-phone-ch': '🇨🇭 Zwitserland',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'E-mail',
-                    'footer-rights': 'Alle rechten voorbehouden.',
-                    'footer-piva': '<strong>IT-adviseur</strong><br>P.IVA 14176680966'
+                    'footer-rights': 'Alle rechten voorbehouden',
+                    'footer-piva': '<strong>IT-consultant</strong><br>P.IVA 14176680966'
                 },
                 'no': {
                     'select-lang-title': 'Velg språk',
@@ -387,7 +395,7 @@
                     'contact-phone-ch': '🇨🇭 Sveits',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': 'E-post',
-                    'footer-rights': 'Alle rettigheter reservert.',
+                    'footer-rights': 'Alle rettigheter reservert',
                     'footer-piva': '<strong>IT-konsulent</strong><br>P.IVA 14176680966'
                 },
                 'zh': {
@@ -407,7 +415,7 @@
                     'contact-phone-ch': '🇨🇭 瑞士',
                     'contact-whatsapp': 'WhatsApp',
                     'contact-email': '电子邮件',
-                    'footer-rights': '保留所有权利。',
+                    'footer-rights': '保留所有权利',
                     'footer-piva': '<strong>IT顾问</strong><br>P.IVA 14176680966'
                 }
             };
@@ -483,8 +491,12 @@
             });
 
             // Chiusura della modale
+            langModalClose.addEventListener('click', () => {
+                langModal.classList.add('hidden');
+            });
+
             langModal.addEventListener('click', (event) => {
-                if (event.target.id === 'lang-modal' || event.target.closest('.lang-option')) {
+                if (event.target.id === 'lang-modal') {
                     langModal.classList.add('hidden');
                 }
             });
@@ -494,6 +506,7 @@
                 button.addEventListener('click', () => {
                     const selectedLang = button.dataset.lang;
                     setLanguage(selectedLang);
+                    langModal.classList.add('hidden'); // Chiude la modale dopo la selezione
                 });
             });
             
