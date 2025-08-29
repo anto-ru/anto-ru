@@ -44,7 +44,7 @@
         }
         
         .light-theme .icon-color {
-            color: #1f2937; /* Colore icona in tema chiaro */
+            color: #ffffff; /* Colore icona in tema chiaro */
         }
 
         /* Stili per il tema scuro */
@@ -95,20 +95,40 @@
                     <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
                 </label>
                 
-				<!-- Language Selector - Placeholder -->
-                <div class="relative group">
-                
-					<!-- <button class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 2a8 8 0 100 16A8 8 0 0010 2zm.707 3.293a1 1 0 00-1.414 0L6 8.586V7a1 1 0 00-2 0v2.586l-2.293 2.293a1 1 0 001.414 1.414L7 11.414V13a1 1 0 102 0v-1.586l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293a1 1 0 000-1.414z" clip-rule="evenodd" />
-                        </svg>
-                        <span>EN</span>
-                    </button> -->
-					
-                    <!-- Dropdown menu, will be implemented with JS for language change -->
-                    <div class="absolute right-0 mt-2 w-24 card-bg rounded-md shadow-lg hidden group-hover:block transition-colors duration-500">
-                        <a href="#" class="block px-4 py-2 text-sm text-subtitle hover:bg-gray-600">IT</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-subtitle hover:bg-gray-600">ES</a>
+				<!-- Language Selector -->
+                <div class="relative">
+                    <button id="lang-button" class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
+                        <span id="current-lang-flag" class="text-xl">🇬🇧</span>
+                        <span id="current-lang-code" class="font-semibold">EN</span>
+                    </button>
+                    <!-- Language Modal (initially hidden) -->
+                    <div id="lang-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
+                        <div class="card-bg rounded-lg shadow-xl p-6 relative z-10 w-full max-w-sm mx-auto">
+                            <h3 class="text-lg font-bold text-main mb-4">Select Language</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <button data-lang="en" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇬🇧</span>
+                                    <span>English</span>
+                                </button>
+                                <button data-lang="it" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇮🇹</span>
+                                    <span>Italiano</span>
+                                </button>
+                                <button data-lang="es" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇪🇸</span>
+                                    <span>Español</span>
+                                </button>
+                                <button data-lang="de" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇩🇪</span>
+                                    <span>Deutsch</span>
+                                </button>
+                                <button data-lang="nl" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇳🇱</span>
+                                    <span>Nederlands</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,7 +185,6 @@
             </div>
             
             <!-- Contact Section -->
-            <!-- Contact Section -->
             <section class="mt-20">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-main mb-6 transition-colors duration-500">
                     Get in Touch
@@ -214,13 +233,26 @@
 		</p>
     </footer>
     
-    <!-- Script for theme management -->
+    <!-- Script for theme and language management -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
+            const langButton = document.getElementById('lang-button');
+            const langModal = document.getElementById('lang-modal');
+            const currentLangFlag = document.getElementById('current-lang-flag');
+            const currentLangCode = document.getElementById('current-lang-code');
+            const langOptions = document.querySelectorAll('.lang-option');
 
-            // Function to set the theme
+            const languages = {
+                en: { flag: '🇬🇧', name: 'English' },
+                it: { flag: '🇮🇹', name: 'Italiano' },
+                es: { flag: '🇪🇸', name: 'Español' },
+                de: { flag: '🇩🇪', name: 'Deutsch' },
+                nl: { flag: '🇳🇱', name: 'Nederlands' }
+            };
+
+            // Funzione per impostare il tema
             const setTheme = (theme) => {
                 if (theme === 'dark') {
                     body.classList.remove('light-theme');
@@ -235,7 +267,7 @@
                 }
             };
 
-            // Check the saved theme in localStorage
+            // Controlla il tema salvato in localStorage
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'light') {
                 setTheme('light');
@@ -243,10 +275,47 @@
                 setTheme('dark');
             }
 
-            // Listen for the switch state change
+            // Ascolta il cambio di stato dello switch
             themeToggle.addEventListener('change', () => {
                 const currentTheme = themeToggle.checked ? 'light' : 'dark';
                 setTheme(currentTheme);
+            });
+
+            // Gestione del menu multilingua
+            const setLanguage = (langCode) => {
+                const lang = languages[langCode];
+                if (lang) {
+                    currentLangFlag.textContent = lang.flag;
+                    currentLangCode.textContent = langCode.toUpperCase();
+                    // Salva la lingua selezionata in localStorage
+                    localStorage.setItem('lang', langCode);
+                    // Qui andrebbe la logica per tradurre il contenuto del sito
+                    console.log(`Language set to: ${lang.name}`);
+                }
+            };
+
+            // Imposta la lingua di default o quella salvata
+            const savedLang = localStorage.getItem('lang') || 'en'; // Default English
+            setLanguage(savedLang);
+
+            // Toggle della modale
+            langButton.addEventListener('click', () => {
+                langModal.classList.toggle('hidden');
+            });
+
+            // Chiusura della modale
+            langModal.addEventListener('click', (event) => {
+                if (event.target.id === 'lang-modal' || event.target.closest('.lang-option')) {
+                    langModal.classList.add('hidden');
+                }
+            });
+            
+            // Gestione della selezione della lingua
+            langOptions.forEach(button => {
+                button.addEventListener('click', () => {
+                    const selectedLang = button.dataset.lang;
+                    setLanguage(selectedLang);
+                });
             });
         });
     </script>
