@@ -7,6 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+		:root{
+			
+		}
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
@@ -34,8 +37,9 @@
             color: #4b5563;
         }
 
-        .light-theme .svg-icon {
-            fill: #2563eb;
+        .light-theme .initials-icon {
+            background-color: #2563eb;
+            color: #ffffff;
         }
 
         /* Stili per il tema scuro */
@@ -59,9 +63,14 @@
         .dark-theme .text-subtitle {
             color: #9ca3af;
         }
+        
+        .dark-theme .initials-icon {
+            background-color: #60a5fa;
+            color: #ffffff;
+        }
 
-        .dark-theme .svg-icon {
-            fill: #93c5fd;
+        .card-initials-container {
+            transition: background-color 0.5s, color 0.5s;
         }
     </style>
 </head>
@@ -71,7 +80,7 @@
     <header class="header-bg shadow-sm py-4 px-6 md:px-12 fixed top-0 w-full z-10 transition-colors duration-500">
         <div class="flex items-center justify-between max-w-7xl mx-auto">
             <div class="font-bold text-xl text-main transition-colors duration-500">
-                <a href="#" class="hover:text-gray-400 transition-colors duration-200">anto-ru</a>
+                <a href="#" class="hover:text-gray-400 transition-colors duration-200">Antonio Russo</a>
             </div>
             <!-- Theme and Language Selectors -->
             <div class="flex items-center space-x-4">
@@ -84,14 +93,17 @@
                         <path d="M9.54 19.98a.75.75 0 00-.54.21A10.51 10.51 0 013.75 12a10.51 10.51 0 015.25-8.21.75.75 0 00-.54-.21A11.25 11.25 0 0012 22.5c2.75 0 5.25-1.12 7.07-2.93A11.25 11.25 0 009.54 19.98z" />
                     </svg>
                 </button>
-                <!-- Language Selector - Placeholder -->
+                
+				<!-- Language Selector - Placeholder -->
                 <div class="relative group">
-                    <button class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
+                
+					<!-- <button class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 svg-icon" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 2a8 8 0 100 16A8 8 0 0010 2zm.707 3.293a1 1 0 00-1.414 0L6 8.586V7a1 1 0 00-2 0v2.586l-2.293 2.293a1 1 0 001.414 1.414L7 11.414V13a1 1 0 102 0v-1.586l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293a1 1 0 000-1.414z" clip-rule="evenodd" />
                         </svg>
                         <span>EN</span>
-                    </button>
+                    </button> -->
+					
                     <!-- Dropdown menu, will be implemented with JS for language change -->
                     <div class="absolute right-0 mt-2 w-24 card-bg rounded-md shadow-lg hidden group-hover:block transition-colors duration-500">
                         <a href="#" class="block px-4 py-2 text-sm text-subtitle hover:bg-gray-600">IT</a>
@@ -107,51 +119,38 @@
         <div class="container mx-auto px-4 py-16 text-center max-w-5xl">
             <!-- Headline -->
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-main mb-4 transition-colors duration-500">
-                Your <span class="text-blue-500">IT Consultant</span> for a Digital-First World
+                Your <span class="text-blue-500">IT Consultant</span> for Digital World
             </h1>
             <p class="text-lg sm:text-xl text-subtitle mb-12 max-w-3xl mx-auto transition-colors duration-500">
                 I help businesses navigate the digital landscape, turning complex challenges into innovative and effective solutions.
             </p>
 
             <!-- Cards Section -->
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
 
                 <!-- Card 1: Web & Mobile App Development -->
-                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
-                    <div class="text-4xl text-blue-500 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.5 9a.5.5 0 01.5-.5h6a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-6a.5.5 0 01-.5-.5V9zM6.5 12a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5v-1z" />
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM5 8.75A.75.75 0 015.75 8h4.5a.75.75 0 010 1.5h-4.5A.75.75 0 015 8.75z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
+                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 flex flex-col">
+                    <div class="text-2xl font-bold mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full initials-icon">dev</div>
                     <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Web & Mobile Development</h3>
-                    <p class="text-subtitle transition-colors duration-500">
+                    <p class="text-subtitle transition-colors duration-500 flex-grow">
                         Crafting responsive websites, e-commerce platforms, and mobile-friendly applications that drive engagement and growth.
                     </p>
                 </div>
 
                 <!-- Card 2: Digital Marketing -->
-                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
-                    <div class="text-4xl text-blue-500 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 7a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0V7.75A.75.75 0 018 7zm2.5 0a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0V7.75A.75.75 0 0110.5 7zm2.5 0a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0V7.75A.75.75 0 0113 7z" />
-                        </svg>
-                    </div>
+                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 flex flex-col">
+                    <div class="text-2xl font-bold mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full initials-icon">DM</div>
                     <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Digital Marketing</h3>
-                    <p class="text-subtitle transition-colors duration-500">
+                    <p class="text-subtitle transition-colors duration-500 flex-grow">
                         Tailored strategies to boost your online presence, drive traffic, and convert visitors into loyal customers.
                     </p>
                 </div>
 
                 <!-- Card 3: Data & Automation -->
-                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
-                    <div class="text-4xl text-blue-500 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm4 2a1 1 0 00-1 1v2a1 1 0 001 1h6a1 1 0 001-1V7a1 1 0 00-1-1H7zm1 5a1 1 0 100 2h4a1 1 0 100-2H8zm-1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Data & Automation</h3>
-                    <p class="text-subtitle transition-colors duration-500">
+                <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 flex flex-col">
+                    <div class="text-2xl font-bold mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full initials-icon">BI</div>
+                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Business Intelligence</h3>
+                    <p class="text-subtitle transition-colors duration-500 flex-grow">
                         Harnessing the power of data for business intelligence, database management, and automating workflows with tools like HubSpot.
                     </p>
                 </div>
