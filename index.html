@@ -65,7 +65,7 @@
             color: #e5e7eb;
         }
 
-        .dark-theme .text-subtitle {
+.dark-theme .text-subtitle {
             color: #9ca3af;
         }
         
@@ -84,18 +84,15 @@
     <!-- Header with theme and language selector -->
     <header class="header-bg shadow-sm py-4 px-6 md:px-12 fixed top-0 w-full z-10 transition-colors duration-500">
         <div class="flex items-center justify-between max-w-7xl mx-auto">
-            <div class="font-bold text-xl text-main transition-colors duration-500">
-                <a href="#" class="hover:text-gray-400 transition-colors duration-200">Antonio Russo</a>
+            <!-- Left: Logo -->
+            <div class="flex-1 flex justify-start">
+                <div class="font-bold text-xl text-main transition-colors duration-500">
+                    <a href="#" class="hover:text-gray-400 transition-colors duration-200">Antonio Russo</a>
+                </div>
             </div>
-            <!-- Theme and language selectors -->
-            <div class="flex items-center space-x-4">
-                <!-- Theme Toggle Button (Switch) -->
-                <label class="relative inline-flex items-center cursor-pointer">
-                    <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                </label>
-                
-				<!-- Language Selector -->
+
+            <!-- Center: Language Selector -->
+            <div class="flex-1 flex justify-center">
                 <div class="relative">
                     <button id="lang-button" class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
                         <span id="current-lang-flag" class="text-xl">🇬🇧</span>
@@ -105,7 +102,7 @@
                     <div id="lang-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center">
                         <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
                         <div class="card-bg rounded-lg shadow-xl p-6 relative z-10 w-full max-w-sm mx-auto">
-                            <h3 class="text-lg font-bold text-main mb-4">Select Language</h3>
+                            <h3 class="text-lg font-bold text-main mb-4" id="select-lang-title">Seleziona Lingua</h3>
                             <div class="grid grid-cols-2 gap-4">
                                 <button data-lang="en" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
                                     <span class="text-2xl">🇬🇧</span>
@@ -127,10 +124,26 @@
                                     <span class="text-2xl">🇳🇱</span>
                                     <span>Nederlands</span>
                                 </button>
+                                <button data-lang="no" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇳🇴</span>
+                                    <span>Norsk</span>
+                                </button>
+                                <button data-lang="zh" class="lang-option flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                                    <span class="text-2xl">🇨🇳</span>
+                                    <span>中文</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Right: Theme Toggle -->
+            <div class="flex-1 flex justify-end">
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                </label>
             </div>
         </div>
     </header>
@@ -139,11 +152,11 @@
     <main class="min-h-screen flex items-center justify-center pt-20 transition-colors duration-500">
         <div class="container mx-auto px-4 py-16 text-center max-w-5xl">
             <!-- Main Title -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-main mb-4 transition-colors duration-500">
-                Your <span class="text-blue-500">IT Consultant</span> for Digital World
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-main mb-4 transition-colors duration-500" id="hero-title">
+                Il tuo <span class="text-blue-500">Consulente IT</span> per il Mondo Digitale
             </h1>
-            <p class="text-lg sm:text-xl text-subtitle mb-12 max-w-3xl mx-auto transition-colors duration-500">
-                I help businesses navigate the digital landscape, turning complex challenges into innovative and effective solutions.
+            <p class="text-lg sm:text-xl text-subtitle mb-12 max-w-3xl mx-auto transition-colors duration-500" id="hero-subtitle">
+                Aiuto le aziende a navigare nel panorama digitale, trasformando sfide complesse in soluzioni innovative ed efficaci.
             </p>
 
             <!-- Cards Section -->
@@ -154,9 +167,9 @@
                     <div class="icon-bg mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full">
                         <i class="fas fa-laptop-code text-3xl icon-color"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Web & Mobile Development</h3>
-                    <p class="text-subtitle transition-colors duration-500 flex-grow">
-                        Crafting responsive websites, e-commerce platforms, and mobile-friendly applications that drive engagement and growth.
+                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500" id="card1-title">Sviluppo Web & Mobile</h3>
+                    <p class="text-subtitle transition-colors duration-500 flex-grow" id="card1-text">
+                        Creazione di siti web reattivi, piattaforme e-commerce e applicazioni mobile-friendly che stimolano l'engagement e la crescita.
                     </p>
                 </div>
 
@@ -165,9 +178,9 @@
                     <div class="icon-bg mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full">
                         <i class="fas fa-chart-line text-3xl icon-color"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Digital Marketing</h3>
-                    <p class="text-subtitle transition-colors duration-500 flex-grow">
-                        Tailored strategies to boost your online presence, drive traffic, and convert visitors into loyal customers.
+                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500" id="card2-title">Marketing Digitale</h3>
+                    <p class="text-subtitle transition-colors duration-500 flex-grow" id="card2-text">
+                        Strategie su misura per aumentare la tua presenza online, generare traffico e convertire i visitatori in clienti fedeli.
                     </p>
                 </div>
 
@@ -176,9 +189,9 @@
                     <div class="icon-bg mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full">
                         <i class="fas fa-chart-column text-3xl icon-color"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500">Business Intelligence</h3>
-                    <p class="text-subtitle transition-colors duration-500 flex-grow">
-                        Harnessing the power of data for business intelligence, database management, and automating workflows with a core set of industry-leading tools.
+                    <h3 class="text-xl font-semibold text-main mb-2 transition-colors duration-500" id="card3-title">Business Intelligence</h3>
+                    <p class="text-subtitle transition-colors duration-500 flex-grow" id="card3-text">
+                        Sfruttare la potenza dei dati per la business intelligence, la gestione dei database e l'automazione dei flussi di lavoro con un set di strumenti leader del settore.
                     </p>
                 </div>
 
@@ -186,35 +199,35 @@
             
             <!-- Contact Section -->
             <section class="mt-20">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-main mb-6 transition-colors duration-500">
-                    Get in Touch
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-main mb-6 transition-colors duration-500" id="contact-title">
+                    Contattami
                 </h2>
-                <p class="text-lg sm:text-xl text-subtitle mb-8 max-w-2xl mx-auto transition-colors duration-500">
-                    I'm ready to help you with your next project. Feel free to contact me via the options below.
+                <p class="text-lg sm:text-xl text-subtitle mb-8 max-w-2xl mx-auto transition-colors duration-500" id="contact-subtitle">
+                    Sono pronto ad aiutarti con il tuo prossimo progetto. Sentiti libero di contattarmi tramite le opzioni qui sotto.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
                     <!-- Italy -->
                     <a href="tel:+393899955356" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
                         <i class="fas fa-phone-alt text-2xl"></i>
-                        <span class="text-lg">🇮🇹 Italy</span>
+                        <span class="text-lg" id="contact-phone-it">🇮🇹 Italia</span>
                     </a>
                     <!-- Spain -->
                     <a href="tel:+346033376908" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
                         <i class="fas fa-phone-alt text-2xl"></i>
-                        <span class="text-lg">🇪🇸 Spain</span>
+                        <span class="text-lg" id="contact-phone-es">🇪🇸 Spagna</span>
                     </a>
                     <!-- Switzerland -->
                     <a href="tel:+41765081218" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
                         <i class="fas fa-phone-alt text-2xl"></i>
-                        <span class="text-lg">🇨🇭 Switzerland</span>
+                        <span class="text-lg" id="contact-phone-ch">🇨🇭 Svizzera</span>
                     </a>
                     <a href="https://wa.me/+346033376908" target="_blank" class="flex items-center space-x-3 text-subtitle hover:text-green-500 transition-colors duration-300">
                         <i class="fab fa-whatsapp text-2xl"></i>
-                        <span class="text-lg">WhatsApp</span>
+                        <span class="text-lg" id="contact-whatsapp">WhatsApp</span>
                     </a>
                     <a href="mailto:antonio.web.lab@gmail.com" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
                         <i class="fas fa-envelope text-2xl"></i>
-                        <span class="text-lg">Email</span>
+                        <span class="text-lg" id="contact-email">Email</span>
                     </a>
                 </div>
             </section>
@@ -224,11 +237,11 @@
      <!-- Footer -->
     <footer class="header-bg shadow-sm py-6 text-center text-subtitle text-sm transition-colors duration-500">
         <p>
-            &copy; 2025 Antonio Russo. All rights reserved.
+            &copy; <span id="current-year"></span> Antonio Russo. <span id="footer-rights">All rights reserved.</span>
         </p>
 		<br>
-		<p>
-			<strong>IT Consultant</strong><br>
+		<p id="footer-piva">
+			<strong>Consulente IT</strong><br>
 			P.IVA 14176680966
 		</p>
     </footer>
@@ -244,14 +257,161 @@
             const currentLangCode = document.getElementById('current-lang-code');
             const langOptions = document.querySelectorAll('.lang-option');
 
+            // Mappatura delle lingue e delle bandiere
             const languages = {
                 en: { flag: '🇬🇧', name: 'English' },
                 it: { flag: '🇮🇹', name: 'Italiano' },
                 es: { flag: '🇪🇸', name: 'Español' },
                 de: { flag: '🇩🇪', name: 'Deutsch' },
-                nl: { flag: '🇳🇱', name: 'Nederlands' }
+                nl: { flag: '🇳🇱', name: 'Nederlands' },
+                no: { flag: '🇳🇴', name: 'Norsk' },
+                zh: { flag: '🇨🇳', name: '中文' }
             };
 
+            // Oggetto con tutte le traduzioni
+            const translations = {
+                'en': {
+                    'select-lang-title': 'Select Language',
+                    'hero-title': 'Your <span class="text-blue-500">IT Consultant</span> for Digital World',
+                    'hero-subtitle': 'I help businesses navigate the digital landscape, turning complex challenges into innovative and effective solutions.',
+                    'card1-title': 'Web & Mobile Development',
+                    'card1-text': 'Crafting responsive websites, e-commerce platforms, and mobile-friendly applications that drive engagement and growth.',
+                    'card2-title': 'Digital Marketing',
+                    'card2-text': 'Tailored strategies to boost your online presence, drive traffic, and convert visitors into loyal customers.',
+                    'card3-title': 'Business Intelligence',
+                    'card3-text': 'Harnessing the power of data for business intelligence, database management, and automating workflows with a core set of industry-leading tools.',
+                    'contact-title': 'Get in Touch',
+                    'contact-subtitle': 'I\'m ready to help you with your next project. Feel free to contact me via the options below.',
+                    'contact-phone-it': '🇮🇹 Italy',
+                    'contact-phone-es': '🇪🇸 Spain',
+                    'contact-phone-ch': '🇨🇭 Switzerland',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'Email',
+                    'footer-rights': 'All rights reserved.',
+                    'footer-piva': '<strong>IT Consultant</strong><br>P.IVA 14176680966'
+                },
+                'it': {
+                    'select-lang-title': 'Seleziona Lingua',
+                    'hero-title': 'Il tuo <span class="text-blue-500">Consulente IT</span> per il Mondo Digitale',
+                    'hero-subtitle': 'Aiuto le aziende a navigare nel panorama digitale, trasformando sfide complesse in soluzioni innovative ed efficaci.',
+                    'card1-title': 'Sviluppo Web & Mobile',
+                    'card1-text': 'Creazione di siti web reattivi, piattaforme e-commerce e applicazioni mobile-friendly che stimolano l\'engagement e la crescita.',
+                    'card2-title': 'Marketing Digitale',
+                    'card2-text': 'Strategie su misura per aumentare la tua presenza online, generare traffico e convertire i visitatori in clienti fedeli.',
+                    'card3-title': 'Business Intelligence',
+                    'card3-text': 'Sfruttare la potenza dei dati per la business intelligence, la gestione dei database e l\'automazione dei flussi di lavoro con un set di strumenti leader del settore.',
+                    'contact-title': 'Contattami',
+                    'contact-subtitle': 'Sono pronto ad aiutarti con il tuo prossimo progetto. Sentiti libero di contattarmi tramite le opzioni qui sotto.',
+                    'contact-phone-it': '🇮🇹 Italia',
+                    'contact-phone-es': '🇪🇸 Spagna',
+                    'contact-phone-ch': '🇨🇭 Svizzera',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'Email',
+                    'footer-rights': 'Tutti i diritti riservati.',
+                    'footer-piva': '<strong>Consulente IT</strong><br>P.IVA 14176680966'
+                },
+                'es': {
+                    'select-lang-title': 'Seleccionar Idioma',
+                    'hero-title': 'Tu <span class="text-blue-500">Consultor de TI</span> para el Mundo Digital',
+                    'hero-subtitle': 'Ayudo a las empresas a navegar por el panorama digital, transformando desafíos complejos en soluciones innovadoras y efectivas.',
+                    'card1-title': 'Desarrollo Web y Móvil',
+                    'card1-text': 'Creación de sitios web responsivos, plataformas de comercio electrónico y aplicaciones móviles que impulsan el compromiso y el crecimiento.',
+                    'card2-title': 'Marketing Digital',
+                    'card2-text': 'Estrategias a medida para potenciar tu presencia en línea, generar tráfico y convertir visitantes en clientes leales.',
+                    'card3-title': 'Inteligencia de Negocio',
+                    'card3-text': 'Aprovechando el poder de los datos para la inteligencia de negocios, la gestión de bases de datos y la automatización de flujos de trabajo con un conjunto de herramientas líderes en la industria.',
+                    'contact-title': 'Ponte en contacto',
+                    'contact-subtitle': 'Estoy listo para ayudarte con tu próximo proyecto. No dudes en contactarme a través de las opciones a continuación.',
+                    'contact-phone-it': '🇮🇹 Italia',
+                    'contact-phone-es': '🇪🇸 España',
+                    'contact-phone-ch': '🇨🇭 Suiza',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'Correo electrónico',
+                    'footer-rights': 'Todos los derechos reservados.',
+                    'footer-piva': '<strong>Consultor de TI</strong><br>P.IVA 14176680966'
+                },
+                'de': {
+                    'select-lang-title': 'Sprache auswählen',
+                    'hero-title': 'Ihr <span class="text-blue-500">IT-Berater</span> für die digitale Welt',
+                    'hero-subtitle': 'Ich helfe Unternehmen, sich in der digitalen Landschaft zurechtzufinden und komplexe Herausforderungen in innovative und effektive Lösungen zu verwandeln.',
+                    'card1-title': 'Web- und Mobile-Entwicklung',
+                    'card1-text': 'Erstellung responsiver Websites, E-Commerce-Plattformen und mobiler Anwendungen, die Engagement und Wachstum fördern.',
+                    'card2-title': 'Digitales Marketing',
+                    'card2-text': 'Maßgeschneiderte Strategien, um Ihre Online-Präsenz zu stärken, Traffic zu generieren und Besucher in treue Kunden zu verwandeln.',
+                    'card3-title': 'Business Intelligence',
+                    'card3-text': 'Nutzung der Macht der Daten für Business Intelligence, Datenbankmanagement und die Automatisierung von Arbeitsabläufen mit einem Kernsatz branchenführender Tools.',
+                    'contact-title': 'Kontakt aufnehmen',
+                    'contact-subtitle': 'Ich bin bereit, Ihnen bei Ihrem nächsten Projekt zu helfen. Sie können mich gerne über die untenstehenden Optionen kontaktieren.',
+                    'contact-phone-it': '🇮🇹 Italien',
+                    'contact-phone-es': '🇪🇸 Spanien',
+                    'contact-phone-ch': '🇨🇭 Schweiz',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'E-Mail',
+                    'footer-rights': 'Alle Rechte vorbehalten.',
+                    'footer-piva': '<strong>IT-Berater</strong><br>P.IVA 14176680966'
+                },
+                'nl': {
+                    'select-lang-title': 'Selecteer Taal',
+                    'hero-title': 'Uw <span class="text-blue-500">IT-adviseur</span> voor de digitale wereld',
+                    'hero-subtitle': 'Ik help bedrijven door het digitale landschap te navigeren, complexe uitdagingen om te zetten in innovatieve en effectieve oplossingen.',
+                    'card1-title': 'Web- en mobiele ontwikkeling',
+                    'card1-text': 'Het creëren van responsieve websites, e-commerce platforms en mobielvriendelijke applicaties die betrokkenheid en groei stimuleren.',
+                    'card2-title': 'Digitale marketing',
+                    'card2-text': 'Op maat gemaakte strategieën om uw online aanwezigheid te vergroten, verkeer te genereren en bezoekers om te zetten in trouwe klanten.',
+                    'card3-title': 'Business Intelligence',
+                    'card3-text': 'De kracht van data benutten voor bedrijfsinformatie, databasebeheer en het automatiseren van workflows met een kernset van toonaangevende tools.',
+                    'contact-title': 'Neem contact op',
+                    'contact-subtitle': 'Ik ben klaar om u te helpen met uw volgende project. U kunt mij gerust contacteren via de onderstaande opties.',
+                    'contact-phone-it': '🇮🇹 Italië',
+                    'contact-phone-es': '🇪🇸 Spanje',
+                    'contact-phone-ch': '🇨🇭 Zwitserland',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'E-mail',
+                    'footer-rights': 'Alle rechten voorbehouden.',
+                    'footer-piva': '<strong>IT-adviseur</strong><br>P.IVA 14176680966'
+                },
+                'no': {
+                    'select-lang-title': 'Velg språk',
+                    'hero-title': 'Din <span class="text-blue-500">IT-konsulent</span> for den digitale verden',
+                    'hero-subtitle': 'Jeg hjelper bedrifter med å navigere i det digitale landskapet, og gjør komplekse utfordringer til innovative og effektive løsninger.',
+                    'card1-title': 'Web- og mobilutvikling',
+                    'card1-text': 'Lage responsive nettsteder, e-handelsplattformer og mobilvennlige applikasjoner som driver engasjement og vekst.',
+                    'card2-title': 'Digital markedsføring',
+                    'card2-text': 'Skreddersydde strategier for å øke din tilstedeværelse på nettet, generere trafikk og konvertere besøkende til lojale kunder.',
+                    'card3-title': 'Forretningsanalyse',
+                    'card3-text': 'Utnytte kraften i data for forretningsanalyse, databasestyring og automatisering av arbeidsflyter med en rekke bransjeledende verktøy.',
+                    'contact-title': 'Ta kontakt',
+                    'contact-subtitle': 'Jeg er klar til å hjelpe deg med ditt neste prosjekt. Kontakt meg gjerne via alternativene nedenfor.',
+                    'contact-phone-it': '🇮🇹 Italia',
+                    'contact-phone-es': '🇪🇸 Spania',
+                    'contact-phone-ch': '🇨🇭 Sveits',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': 'E-post',
+                    'footer-rights': 'Alle rettigheter reservert.',
+                    'footer-piva': '<strong>IT-konsulent</strong><br>P.IVA 14176680966'
+                },
+                'zh': {
+                    'select-lang-title': '选择语言',
+                    'hero-title': '您在数字世界的<span class="text-blue-500">IT顾问</span>',
+                    'hero-subtitle': '我帮助企业驾驭数字环境，将复杂的挑战转化为创新有效的解决方案。',
+                    'card1-title': '网站和移动应用开发',
+                    'card1-text': '打造响应式网站、电子商务平台和移动友好型应用，以推动用户参与和业务增长。',
+                    'card2-title': '数字营销',
+                    'card2-text': '量身定制的策略，以提升您的在线形象、增加流量并将访客转化为忠实客户。',
+                    'card3-title': '商业智能',
+                    'card3-text': '利用数据的力量进行商业智能、数据库管理，并使用一套行业领先的工具来自动化工作流程。',
+                    'contact-title': '联系我',
+                    'contact-subtitle': '我已准备好帮助您开展下一个项目。请通过以下方式与我联系。',
+                    'contact-phone-it': '🇮🇹 意大利',
+                    'contact-phone-es': '🇪🇸 西班牙',
+                    'contact-phone-ch': '🇨🇭 瑞士',
+                    'contact-whatsapp': 'WhatsApp',
+                    'contact-email': '电子邮件',
+                    'footer-rights': '保留所有权利。',
+                    'footer-piva': '<strong>IT顾问</strong><br>P.IVA 14176680966'
+                }
+            };
+            
             // Funzione per impostare il tema
             const setTheme = (theme) => {
                 if (theme === 'dark') {
@@ -284,18 +444,37 @@
             // Gestione del menu multilingua
             const setLanguage = (langCode) => {
                 const lang = languages[langCode];
-                if (lang) {
+                const texts = translations[langCode];
+
+                if (lang && texts) {
                     currentLangFlag.textContent = lang.flag;
                     currentLangCode.textContent = langCode.toUpperCase();
-                    // Salva la lingua selezionata in localStorage
                     localStorage.setItem('lang', langCode);
-                    // Qui andrebbe la logica per tradurre il contenuto del sito
-                    console.log(`Language set to: ${lang.name}`);
+
+                    // Aggiorna tutti i testi della pagina
+                    document.getElementById('select-lang-title').textContent = texts['select-lang-title'];
+                    document.getElementById('hero-title').innerHTML = texts['hero-title'];
+                    document.getElementById('hero-subtitle').textContent = texts['hero-subtitle'];
+                    document.getElementById('card1-title').textContent = texts['card1-title'];
+                    document.getElementById('card1-text').textContent = texts['card1-text'];
+                    document.getElementById('card2-title').textContent = texts['card2-title'];
+                    document.getElementById('card2-text').textContent = texts['card2-text'];
+                    document.getElementById('card3-title').textContent = texts['card3-title'];
+                    document.getElementById('card3-text').textContent = texts['card3-text'];
+                    document.getElementById('contact-title').textContent = texts['contact-title'];
+                    document.getElementById('contact-subtitle').textContent = texts['contact-subtitle'];
+                    document.getElementById('contact-phone-it').textContent = texts['contact-phone-it'];
+                    document.getElementById('contact-phone-es').textContent = texts['contact-phone-es'];
+                    document.getElementById('contact-phone-ch').textContent = texts['contact-phone-ch'];
+                    document.getElementById('contact-whatsapp').textContent = texts['contact-whatsapp'];
+                    document.getElementById('contact-email').textContent = texts['contact-email'];
+                    document.getElementById('footer-rights').textContent = texts['footer-rights'];
+                    document.getElementById('footer-piva').innerHTML = texts['footer-piva'];
                 }
             };
 
             // Imposta la lingua di default o quella salvata
-            const savedLang = localStorage.getItem('lang') || 'en'; // Default English
+            const savedLang = localStorage.getItem('lang') || 'it'; // Default Italiano
             setLanguage(savedLang);
 
             // Toggle della modale
@@ -317,6 +496,9 @@
                     setLanguage(selectedLang);
                 });
             });
+            
+            // Imposta l'anno corrente
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
