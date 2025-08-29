@@ -81,21 +81,21 @@
 </head>
 <body class="dark-theme transition-colors duration-500">
 
-    <!-- Header con selettore del tema e della lingua -->
+    <!-- Header with theme and language selector -->
     <header class="header-bg shadow-sm py-4 px-6 md:px-12 fixed top-0 w-full z-10 transition-colors duration-500">
         <div class="flex items-center justify-between max-w-7xl mx-auto">
             <div class="font-bold text-xl text-main transition-colors duration-500">
                 <a href="#" class="hover:text-gray-400 transition-colors duration-200">Antonio Russo</a>
             </div>
-            <!-- Selettori per il tema e la lingua -->
+            <!-- Theme and language selectors -->
             <div class="flex items-center space-x-4">
-                <!-- Toggle Button per il Tema (Switch) -->
+                <!-- Theme Toggle Button (Switch) -->
                 <label class="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
                     <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
                 </label>
                 
-				<!-- Selettore della Lingua - Placeholder -->
+				<!-- Language Selector - Placeholder -->
                 <div class="relative group">
                 
 					<!-- <button class="flex items-center space-x-2 text-main hover:text-gray-400 transition-colors duration-200 focus:outline-none">
@@ -115,10 +115,10 @@
         </div>
     </header>
 
-    <!-- Sezione Hero -->
+    <!-- Hero Section -->
     <main class="min-h-screen flex items-center justify-center pt-20 transition-colors duration-500">
         <div class="container mx-auto px-4 py-16 text-center max-w-5xl">
-            <!-- Titolo principale -->
+            <!-- Main Title -->
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-main mb-4 transition-colors duration-500">
                 Your <span class="text-blue-500">IT Consultant</span> for Digital World
             </h1>
@@ -126,10 +126,10 @@
                 I help businesses navigate the digital landscape, turning complex challenges into innovative and effective solutions.
             </p>
 
-            <!-- Sezione Card -->
+            <!-- Cards Section -->
             <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
 
-                <!-- Card 1: Sviluppo Web e Mobile -->
+                <!-- Card 1: Web & Mobile Development -->
                 <div class="card-bg rounded-xl shadow-lg p-6 w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105 flex flex-col">
                     <div class="icon-bg mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full">
                         <i class="fas fa-laptop-code text-3xl icon-color"></i>
@@ -163,23 +163,64 @@
                 </div>
 
             </div>
+            
+            <!-- Contact Section -->
+            <!-- Contact Section -->
+            <section class="mt-20">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-main mb-6 transition-colors duration-500">
+                    Get in Touch
+                </h2>
+                <p class="text-lg sm:text-xl text-subtitle mb-8 max-w-2xl mx-auto transition-colors duration-500">
+                    I'm ready to help you with your next project. Feel free to contact me via the options below.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <!-- Italy -->
+                    <a href="tel:+393899955356" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                        <span class="text-lg">🇮🇹 Italy</span>
+                    </a>
+                    <!-- Spain -->
+                    <a href="tel:+346033376908" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                        <span class="text-lg">🇪🇸 Spain</span>
+                    </a>
+                    <!-- Switzerland -->
+                    <a href="tel:+41765081218" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                        <span class="text-lg">🇨🇭 Switzerland</span>
+                    </a>
+                    <a href="https://wa.me/+346033376908" target="_blank" class="flex items-center space-x-3 text-subtitle hover:text-green-500 transition-colors duration-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span class="text-lg">WhatsApp</span>
+                    </a>
+                    <a href="mailto:antonio.web.lab@gmail.com" class="flex items-center space-x-3 text-subtitle hover:text-blue-500 transition-colors duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                        <span class="text-lg">Email</span>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="header-bg shadow-sm py-6 text-center text-subtitle text-sm transition-colors duration-500">
         <p>
-            &copy; 2024 Antonio Russo. All rights reserved.
+            &copy; 2025 Antonio Russo. All rights reserved.
         </p>
+		<br>
+		<p>
+			<strong>IT Consultant</strong><br>
+			P.IVA 14176680966
+		</p>
     </footer>
     
-    <!-- Script per la gestione del tema -->
+    <!-- Script for theme management -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
 
-            // Funzione per impostare il tema
+            // Function to set the theme
             const setTheme = (theme) => {
                 if (theme === 'dark') {
                     body.classList.remove('light-theme');
@@ -194,7 +235,7 @@
                 }
             };
 
-            // Controlla il tema salvato in localStorage
+            // Check the saved theme in localStorage
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'light') {
                 setTheme('light');
@@ -202,7 +243,7 @@
                 setTheme('dark');
             }
 
-            // Ascolta il cambio di stato dello switch
+            // Listen for the switch state change
             themeToggle.addEventListener('change', () => {
                 const currentTheme = themeToggle.checked ? 'light' : 'dark';
                 setTheme(currentTheme);
