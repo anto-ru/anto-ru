@@ -1,0 +1,35 @@
+name: Aggiorna Data nel README
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v2
+
+      - name: Aggiorna la data in tutti i file
+        run: |
+          current_date=$(date +'%d-%m-%Y')
+          
+          sed -i "s@<p>Ultimo aggiornamento:.*@<p>Ultimo aggiornamento: $current_date</p>@" README.it.md
+          sed -i "s@<p>Letzte Aktualisierung:.*@<p>Letzte Aktualisierung: $current_date</p>@" README.de.md
+          sed -i "s@<p>Última actualización:.*@<p>Última actualización: $current_date</p>@" README.es.md
+          sed -i "s@<p>Last Update:.*@<p>Last Update: $current_date</p>@" README.md
+          sed -i "s@Laatst bijgewerkt:.*@<p>Laatst bijgewerkt: $current_date</p>@" README.nl.md
+          sed -i "s@Sist oppdatert:.*@<p>Sist oppdatert: $current_date</p>@" README.no.md
+          sed -i "s@<p>最后更新:.*@<p>最后更新: $current_date</p>@" README.zh.md
+
+      - name: Commit e push dell'aggiornamento
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Aggiornamento automatico della data nei README"
+          file_pattern: "README*.md"
+          branch: main
