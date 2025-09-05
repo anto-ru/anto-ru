@@ -1,4 +1,5 @@
 <!-- INCLUDE: sections/language-menu.md -->
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -16,6 +17,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 E-Mail:&nbsp;antonio.web.lab@gmail.com
 <br>
@@ -30,6 +32,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>技术栈和技能</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
 
 
 
@@ -58,6 +61,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>正在开发的新项目: （详细信息仅提供英文版）</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 
