@@ -6,8 +6,6 @@
 <h1>🇬🇧 English version</h1>
 <p>Last Update: 05-09-2025</p>
 
-<p>Prova</p>
-
 👋 Hi, my name is Antonio, welcome !<br><br>
 I'm ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificated:<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) and ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
 
@@ -15,11 +13,6 @@ I am available to collaborate with companies and professionals who want to devel
 
 <h2>Contact:</h2>
 <!-- INCLUDE: sections/contact.md -->
-
-
-
-
-
 <!-- START INCLUDE -->
 E-Mail:&nbsp;antonio.web.lab@gmail.com
 <br>
@@ -34,14 +27,6 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>Stack and skills</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
-
-
-
-
-
-
-
-
 <!-- START INCLUDE -->
 ![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)  ![WordPress](https://img.shields.io/badge/wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
