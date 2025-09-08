@@ -1,8 +1,9 @@
 sections/
 anto-ru_old-versions/
 README_md-di-Terzi/
-update_readmes.py
+
+# Ignore all markdown files except specific ones
 update_readmes.md
 anto-ru-web-site-project.md
-pull_from_main.sh
-update_readmes.sh
+*.sh
+*.py
