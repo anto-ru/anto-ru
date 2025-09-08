@@ -6,7 +6,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇪🇸 Versión en español</h1>
-<p>Última actualización: 07-09-2025</p>
+<p>Última actualización: 08-09-2025</p>
 
 👋 Hola, me llamo Antonio, ¡bienvenido!<br><br>
 Soy ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificado:<br> ![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) y ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
