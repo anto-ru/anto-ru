@@ -3,6 +3,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -17,6 +18,7 @@ Sono disponibile a collaborare con aziende e professionisti che desiderano svilu
 
 <h2>Contatti:</h2>
 <!-- INCLUDE: sections/contact.md -->
+
 
 
 
@@ -52,6 +54,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 
 
+
 <!-- START INCLUDE -->
 ![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)  ![WordPress](https://img.shields.io/badge/wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
@@ -76,6 +79,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>Nuovi progetti in sviluppo: (dettagli disponibilli solo in Inglese)</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 

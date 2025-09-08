@@ -3,6 +3,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -21,6 +22,7 @@ I am available to collaborate with companies and professionals who want to devel
 
 
 
+
 <!-- START INCLUDE -->
 E-Mail:&nbsp;antonio.web.lab@gmail.com
 <br>
@@ -35,6 +37,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>Stack and skills</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
 
 
 
@@ -70,6 +73,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>New projects in development:</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 
