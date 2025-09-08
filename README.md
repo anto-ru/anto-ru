@@ -1,6 +1,7 @@
 <!-- INCLUDE: sections/language-menu.md -->
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -17,6 +18,7 @@ I am available to collaborate with companies and professionals who want to devel
 <!-- INCLUDE: sections/contact.md -->
 
 
+
 <!-- START INCLUDE -->
 E-Mail:&nbsp;antonio.web.lab@gmail.com
 <br>
@@ -31,6 +33,7 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 <h2>Stack and skills</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
 
 
 
@@ -73,12 +76,11 @@ E-Mail:&nbsp;antonio.web.lab@gmail.com
 
 
 
+
 <!-- START INCLUDE -->
-- [**omnia** Access Point `v1.0`](#omnia-access-point-v10)
-- [Validation rules for **`Gift Card Form`**](#validation-rules-for-gift-card-form)
-- [**`Laracast`** v.12 \& **`PHP`**](#laracast-v12--php)
-- [**`Microsoft Windows`** CLI \& Services Utilities](#microsoft-windows-cli--services-utilities)
-- [Try hack me on **`Flask`**](#try-hack-me-on-flask)
+- [Code-Lab Academy:](#code-lab-academy)
+  - [SQL Injection: The `Easiest and Most Dangerous Hack` There Is](#sql-injection-the-easiest-and-most-dangerous-hack-there-is)
+  - [Try hack me on **`Flask`**](#try-hack-me-on-flask)
 
 <br>
 
@@ -121,6 +123,14 @@ Repository: ***https://github.com/anto-ru/laracast-PHP***
 ## **`Microsoft Windows`** CLI & Services Utilities
 
 Repository: **https://github.com/anto-ru/windows-batch-scripts-public**
+
+<br>
+
+# Code-Lab Academy:
+
+## SQL Injection: The `Easiest and Most Dangerous Hack` There Is
+
+This project is a basic web application in Flask designed to demonstrate the dangers of SQL injections. It should not be used in production or with real data. The application allows a user to log in using credentials stored in an SQLite database. However, the way the SQL query is built in this application makes it vulnerable to SQL injection attacks. Enjoy!
 
 <br>
 
