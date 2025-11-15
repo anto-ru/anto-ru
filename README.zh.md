@@ -9,7 +9,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇨🇳 中文版本</h1>
-<p>最后更新: 14-11-2025</p>
+<p>最后更新: 15-11-2025</p>
 
 👋 你好，我叫 Antonio，欢迎！<br><br>
 我是一名经过认证的 ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white)：<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) 和 ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
