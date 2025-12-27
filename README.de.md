@@ -6,6 +6,8 @@
 
 
 
+
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -34,8 +36,10 @@ Ich stehe Unternehmen und Fachleuten zur Verfügung, die neue digitale Projekte 
 
 
 
+
+
 <!-- START INCLUDE -->
-E-Mail:&nbsp;antoniorussodigital@gmail.com
+E-Mail:&nbsp;antonio.russo.digital@gmail.com
 <br>
 <a href="https://antoniorussodigital.com/">Web site</a>
 <br>
@@ -48,6 +52,8 @@ E-Mail:&nbsp;antoniorussodigital@gmail.com
 
 <h2>Pila tecnológica y habilidades</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
+
 
 
 
@@ -88,6 +94,8 @@ E-Mail:&nbsp;antoniorussodigital@gmail.com
 
 <h2>Technologie-stack und fähigkeiten: (details nur auf Englisch verfügbar)</h2>
 <!-- INCLUDE: sections/projects.md -->
+
+
 
 
 

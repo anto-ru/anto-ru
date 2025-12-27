@@ -4,6 +4,8 @@
 
 
 
+
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -26,8 +28,10 @@ I am available to collaborate with companies and professionals who want to devel
 
 
 
+
+
 <!-- START INCLUDE -->
-E-Mail:&nbsp;antoniorussodigital@gmail.com
+E-Mail:&nbsp;antonio.russo.digital@gmail.com
 <br>
 <a href="https://antoniorussodigital.com/">Web site</a>
 <br>
@@ -40,6 +44,8 @@ E-Mail:&nbsp;antoniorussodigital@gmail.com
 
 <h2>Stack and skills</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
+
 
 
 
@@ -74,6 +80,8 @@ E-Mail:&nbsp;antoniorussodigital@gmail.com
 
 <h2>New projects in development:</h2>
 <!-- INCLUDE: sections/projects.md -->
+
+
 
 
 
