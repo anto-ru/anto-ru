@@ -4,6 +4,5 @@ README-md-di-Terzi/
 
 # Ignore all markdown files except specific ones
 update_readmes.md
-anto-ru-web-site-project.md
 *.sh
 *.py
