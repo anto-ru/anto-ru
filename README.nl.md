@@ -11,7 +11,7 @@
 <br>
 <h1>🇳🇱 Nederlandse versie</h1>
 
-<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>Laatst bijgewerkt: 19-01-2026</p>
+<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>Laatst bijgewerkt: 20-01-2026</p>
 
 👋 Hallo, mijn naam is Antonio, welkom!<br><br>
 Ik ben ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) gecertificeerd:<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) en ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
