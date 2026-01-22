@@ -10,7 +10,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇳🇴 Norsk versjon</h1>
-<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>Sist oppdatert: 21-01-2026</p>
+<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>Sist oppdatert: 22-01-2026</p>
 
 👋 Hei, jeg heter Antonio, velkommen!<br><br>
 Jeg er en sertifisert ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white):<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) og ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
