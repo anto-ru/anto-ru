@@ -13,7 +13,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇩🇪 Deutsche Version</h1>
-<p>Letzte Aktualisierung: 23-01-2026</p>
+<p>Letzte Aktualisierung: 24-01-2026</p>
 
 👋 Hallo, mein Name ist Antonio, willkommen!<br><br>
 Ich bin ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) zertifiziert:<br> ![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) und ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
