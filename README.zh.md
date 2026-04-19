@@ -14,7 +14,7 @@
 <p>最后更新: 19-04-2026</p>
 
 👋 你好，我叫 Antonio，欢迎！<br><br>
-我是一名经过认证的 ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white)：<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) 和 ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
+我是一名经过认证的 ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white)：<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 我可以与希望开发新数字项目的公司和专业人士合作，包括 **网站、网络应用和数据分析**，并提供专业知识和定制化解决方案，将想法变为现实。
 

@@ -17,7 +17,7 @@
 <p>Ultimo aggiornamento: 19-04-2026</p>
 
 👋 Ciao, mi chiamo Antonio, benvenuto!<br><br>
-Sono ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificato:<br> ![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) e ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) e ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
+Sono ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificato:<br> ![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 Sono disponibile a collaborare con aziende e professionisti che desiderano sviluppare nuovi progetti digitali, includendo **siti web, web app e analisi dei dati**, offrendo competenza e soluzioni su misura per trasformare le idee in realtà.
 

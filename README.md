@@ -15,7 +15,7 @@
 <p>Last Update: 19-04-2026</p>
 
 👋 Hi, my name is Antonio, welcome !<br><br>
-I'm ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificated:<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) and ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) 
+I'm ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificated:<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 I am available to collaborate with companies and professionals who want to develop new digital projects, including **websites, web apps, and data analysis**, offering expertise and tailored solutions to turn ideas into reality.
 
