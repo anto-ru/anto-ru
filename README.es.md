@@ -10,6 +10,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -24,6 +25,7 @@ Estoy disponible para colaborar con empresas y profesionales que deseen desarrol
 
 <h2>Contacto:</h2>
 <!-- INCLUDE: sections/contact.md -->
+
 
 
 
@@ -60,6 +62,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 
 
+
 <!-- START INCLUDE -->
 ![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)  ![WordPress](https://img.shields.io/badge/wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
@@ -84,6 +87,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 <h2>Nuevos proyectos en desarrollo: (detalles disponibles solo en inglés)</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 

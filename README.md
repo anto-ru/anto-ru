@@ -6,6 +6,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -20,6 +21,7 @@ I am available to collaborate with companies and professionals who want to devel
 
 <h2>Contact:</h2>
 <!-- INCLUDE: sections/contact.md -->
+
 
 
 
@@ -56,6 +58,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 
 
+
 <!-- START INCLUDE -->
 ![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)  ![WordPress](https://img.shields.io/badge/wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
@@ -80,6 +83,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 <h2>New projects in development:</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 

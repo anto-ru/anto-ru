@@ -5,6 +5,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -28,6 +29,7 @@ Ik ben beschikbaar om samen te werken met bedrijven en professionals die nieuwe 
 
 
 
+
 <!-- START INCLUDE -->
 E-Mail:&nbsp;antonio.russo.digital@gmail.com
 <br>
@@ -42,6 +44,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 <h2>Stack en vaardigheden</h2>
 <!-- INCLUDE: sections/stack-skills.md -->
+
 
 
 
@@ -77,6 +80,7 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 <h2>Nieuwe projecten in ontwikkeling: (details alleen beschikbaar in het Engels)</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 
