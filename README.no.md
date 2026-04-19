@@ -7,6 +7,7 @@
 
 
 
+
 <!-- START INCLUDE -->
 [🇩🇪 Deutsch](README.de.md) - [🇪🇸 Español](README.es.md) - [🇬🇧 English](README.md) - [🇮🇹 Italiano](README.it.md) - [🇳🇱 Nederlands](README.nl.md)  - [🇳🇴 Norsk](README.no.md) - [🇨🇳 中文](README.zh.md)
 <!-- END INCLUDE -->
@@ -33,8 +34,9 @@ Jeg er tilgjengelig for samarbeid med bedrifter og fagfolk som ønsker å utvikl
 
 
 
+
 <!-- START INCLUDE -->
-E-Mail:&nbsp;antonio.russo.digital@gmail.com
+E-Mail:&nbsp;info@antoniorussodigital.com
 <br>
 <a href="https://antoniorussodigital.com/">Web site</a>
 <br>
@@ -59,16 +61,23 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 
 
+
 <!-- START INCLUDE -->
-![JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![KOTLIN](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) ![FLUTTER](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![SPRING BOOT](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+
+![FLUTTER](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![React Native](https://img.shields.io/badge/react%20native-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![KOTLIN](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) 
 
 ![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)  ![WordPress](https://img.shields.io/badge/wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Django](https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
-![Astro](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white) ![React Native](https://img.shields.io/badge/react%20native-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Angular](https://img.shields.io/badge/angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![NODEJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![JS](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Strapi](https://img.shields.io/badge/strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white) ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Angular](https://img.shields.io/badge/angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![NODEJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![JS](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Strapi](https://img.shields.io/badge/strapi-4945FF?style=for-the-badge&logo=strapi&logoColor=white)
 
 ![TAILWIND](https://img.shields.io/badge/tailwind%20css-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![BOOTSTRAP](https://img.shields.io/badge/bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![FIREBASE](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![CLOUDFLARE](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![AMAZON AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)
 
 ![Supabase](https://img.shields.io/badge/Supabase-171717?style=for-the-badge&logo=supabase&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![SQL SERVER](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) ![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
@@ -80,11 +89,22 @@ E-Mail:&nbsp;antonio.russo.digital@gmail.com
 
 ![Ubuntu Server](https://img.shields.io/badge/Ubuntu%20Server-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![LINUX](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![MAC OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white) ![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![SYNOLOGY-DSM](https://img.shields.io/badge/Synology%20DSM-0078FF?style=for-the-badge&logo=synology&logoColor=white)
 
+![OPENAI GPT](https://img.shields.io/badge/OpenAI%20GPT-412991?style=for-the-badge&logo=openai&logoColor=white)
+![CLAUDE](https://img.shields.io/badge/Claude-191919?style=for-the-badge&logo=anthropic&logoColor=white)
+![GOOGLE GEMINI](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![META LLAMA](https://img.shields.io/badge/Meta%20Llama-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+![MISTRAL](https://img.shields.io/badge/Mistral-FF7000?style=for-the-badge)
+![DEEPSEEK](https://img.shields.io/badge/DeepSeek-1C6BFF?style=for-the-badge)
+![GROK](https://img.shields.io/badge/Grok-000000?style=for-the-badge&logo=x&logoColor=white)
+![COHERE COMMAND](https://img.shields.io/badge/Cohere%20Command-111111?style=for-the-badge)
+![QWEN](https://img.shields.io/badge/Qwen-FF6A00?style=for-the-badge)
+
 <br>
 <!-- END INCLUDE -->
 
 <h2>Nye prosjekter under utvikling: (detaljer kun tilgjengelig på engelsk)</h2>
 <!-- INCLUDE: sections/projects.md -->
+
 
 
 
