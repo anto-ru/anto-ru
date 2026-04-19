@@ -11,7 +11,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇳🇴 Norsk versjon</h1>
-<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>Sist oppdatert: 19-04-2026</p>
+<p>Sist oppdatert: 19-04-2026</p>
 
 👋 Hei, jeg heter Antonio, velkommen!<br><br>
 Jeg er en sertifisert ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white):<br>![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
