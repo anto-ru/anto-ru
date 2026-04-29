@@ -16,7 +16,7 @@
 <!-- END INCLUDE -->
 <br>
 <h1>🇮🇹 Versione Italiana</h1>
-<p>Ultimo aggiornamento: 28-04-2026</p>
+<p>Ultimo aggiornamento: 29-04-2026</p>
 
 👋 Ciao, mi chiamo Antonio, benvenuto!<br><br>
 Sono ![Google Specialist](https://img.shields.io/badge/Google%20Specialist-4285F4?style=for-the-badge&logo=google&logoColor=white) certificato:<br> ![Data Analyst](https://img.shields.io/badge/Google_Data_Analyst-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![IT Assistance](https://img.shields.io/badge/Google_IT_Support-4285F4?style=for-the-badge&logo=google&logoColor=white) , ![Project Management](https://img.shields.io/badge/Google_Project_Manager-4285F4?style=for-the-badge&logo=google&logoColor=white)
